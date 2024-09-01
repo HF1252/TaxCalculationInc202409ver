@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>株式会社税金計算シミュレーション</title>
+    <link rel="stylesheet" href="TaxCalculationInc.css">
+</head>
+<body>
+    <div class="container">
+        <h1>株式会社税金計算シミュレーション（令和6年版）</h1>
+        <form id="tax-form">
+            <label for="capital">資本金（円）:</label>
+            <input type="number" id="capital" placeholder="例: 1000000">
+
+            <label for="profit">年間利益（円）:</label>
+            <input type="number" id="profit" placeholder="例: 500000">
+
+            <label for="employees">従業員数:</label>
+            <input type="number" id="employees" placeholder="例: 5">
+
+            <label for="salary">平均月給（円）:</label>
+            <input type="number" id="salary" placeholder="例: 300000">
+
+        </form>
+        <button type="button" onclick="calculateTax()">計算する</button>
+        <div id="result"></div>
+    </div>
+    <div class="copy-content">
+        <small class="copy">&copy; 2024 H.F</small>
+    </div>
+    <script src="TaxCalculationInc.js"></script>
+</body>
+</html>
